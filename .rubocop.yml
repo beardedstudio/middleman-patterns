@@ -1,0 +1,12 @@
+Style/Encoding:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 100
+
+Style/FileName:
+  Enabled: false
+  Exclude: 'lib/middleman-patterns.rb'
+
+Style/SignalException:
+  Enabled: false
