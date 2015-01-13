@@ -7,8 +7,8 @@ You'll need to install this gem first.
 
 * put `gem install 'middleman-patterns'` in the Gemfile of your middleman project
 * run `bundle install`
-* add the following code to your `config.rb` file (outside the `configure :build` block):
-       activate :patterns
+* add `activate :patterns` to your `config.rb` file outside the `configure :build` block
+       
 
 You're up and running! This gem supports whatever templating engines middleman supports, but you do need to put the template files for patterns where this extension can find them. The expected default directory structure looks like the following (filenames are examples):
 
