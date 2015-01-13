@@ -1,4 +1,4 @@
-# middleman-patterns
+# Pattern Man
 A middleman extension that implements [Pattern Lab-style](http://patternlab.io) patterns.
 
 ### Installation
