@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
 
   s.licenses      = ['MIT']
 
-  s.add_runtime_dependency('middleman-core', ['>= 3.3.7'])
+  s.add_runtime_dependency 'middleman-core', ['~> 3.3', '>= 3.3.7']
 end
