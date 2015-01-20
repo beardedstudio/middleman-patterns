@@ -10,7 +10,6 @@ gemspec
 group :development do
   gem 'yard', '~> 0.8.7'
   gem 'rubocop', '~> 0.28'
-  gem 'rake', '~> 10.4.2'
 end
 
 group :test do
@@ -21,4 +20,5 @@ group :test do
   gem 'aruba', '~> 0.6.2'
   gem 'haml', '~> 4.0.6'
   gem 'coveralls', '~> 0.7.3', require: false
+  gem 'rake', '~> 10.4.2'
 end

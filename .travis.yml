@@ -1,13 +1,16 @@
 language: ruby
+bundler_args: --without development
 rvm:
-  - 1.8.7
-  - 1.9.3
-  - jruby-18mode # JRuby in 1.8 mode
-  - jruby-19mode # JRuby in 1.9 mode
-  - rbx-2.1.1
   - ruby-head
-  - 2.0.0
+  - 2.2
+  - 2.1.1
   - 2.1.0
-  - 2.2.0
+  - 1.9.3
+  - 2.0.0
+  - jruby-19mode
+  - rbx-2.1.1
 after_success:
   - coveralls
+notifications:
+  slack:
+    secure: nEsVscnHHQ8H6848nmPXnyat4RFixQrPfl7KeohL9AbGo8uLH6o61bt8yr6FN9q+5XBciy+z7Y6BNkZ9YS9Dfots5CGDDO/rSgDnGcK9zYZP3Vp4eDdnlDRrPcPpqP8PKBODt4nra5T0Am/bGSbHUK68dTbWunaC1c/qi+210m4=
