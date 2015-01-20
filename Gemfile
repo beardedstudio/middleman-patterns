@@ -7,7 +7,6 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in middleman-patterns.gemspec
 gemspec
 
-gem 'middleman-core', :path => '../middleman/middleman-core'
 group :development do
   gem 'yard', '~> 0.8.7'
   gem 'rubocop', '~> 0.28'
@@ -21,4 +20,5 @@ group :test do
   gem 'cucumber', '~> 1.3.18'
   gem 'aruba', '~> 0.6.2'
   gem 'haml', '~> 4.0.6'
+  gem 'coveralls', '~> 0.7.3', require: false
 end
