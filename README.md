@@ -1,6 +1,11 @@
 # Pattern Man
 A middleman extension that implements [Pattern Lab-style](http://patternlab.io) patterns.
 
+
+[![Build Status](https://travis-ci.org/beardedstudio/middleman-patterns.svg?branch=develop)](https://travis-ci.org/beardedstudio/middleman-patterns)
+
+[![Coverage Status](https://coveralls.io/repos/beardedstudio/middleman-patterns/badge.svg?branch=develop)](https://coveralls.io/r/beardedstudio/middleman-patterns?branch=develop)
+
 ### Installation
 
 You'll need to install this gem first.
@@ -8,7 +13,7 @@ You'll need to install this gem first.
 * put `gem install 'middleman-patterns'` in the Gemfile of your middleman project
 * run `bundle install`
 * add `activate :patterns` to your `config.rb` file outside the `configure :build` block
-       
+
 
 You're up and running! This gem supports whatever templating engines middleman supports, but you do need to put the template files for patterns where this extension can find them. The expected default directory structure looks like the following (filenames are examples):
 

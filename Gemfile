@@ -9,9 +9,16 @@ gemspec
 
 group :development do
   gem 'yard', '~> 0.8.7'
+  gem 'rubocop', '~> 0.28'
 end
 
 group :test do
-  gem 'rubocop', '~> 0.28'
-  gem 'simplecov', '~> 0.9' require: false
+  gem 'simplecov', '~> 0.9'
+  gem 'rspec', '~> 3.1.0'
+  gem 'fivemat', '~> 1.3.1'
+  gem 'cucumber', '~> 1.3.18'
+  gem 'aruba', '~> 0.6.2'
+  gem 'haml', '~> 4.0.6'
+  gem 'coveralls', '~> 0.7.3', require: false
+  gem 'rake', '~> 10.4.2'
 end
