@@ -2,9 +2,9 @@
 A middleman extension that implements [Pattern Lab-style](http://patternlab.io) patterns.
 
 
-[![Build Status](https://travis-ci.org/beardedstudio/middleman-patterns.svg?branch=develop)](https://travis-ci.org/beardedstudio/middleman-patterns)
+[![Build Status](https://travis-ci.org/beardedstudio/middleman-patterns.svg?branch=master)](https://travis-ci.org/beardedstudio/middleman-patterns)
 
-[![Coverage Status](https://coveralls.io/repos/beardedstudio/middleman-patterns/badge.svg?branch=develop)](https://coveralls.io/r/beardedstudio/middleman-patterns?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/beardedstudio/middleman-patterns/badge.svg?branch=master)](https://coveralls.io/r/beardedstudio/middleman-patterns?branch=develop)
 
 ### Installation
 
