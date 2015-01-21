@@ -10,7 +10,7 @@ A middleman extension that implements [Pattern Lab-style](http://patternlab.io) 
 
 You'll need to install this gem first.
 
-* put `gem install 'middleman-patterns'` in the Gemfile of your middleman project
+* put `gem 'middleman-patterns'` in the Gemfile of your middleman project
 * run `bundle install`
 * add `activate :patterns` to your `config.rb` file outside the `configure :build` block
 
