@@ -4,7 +4,7 @@ $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'middleman-patterns'
-  s.version     = '0.1'
+  s.version     = '0.2'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Brett Bender']
   s.email       = ['brett@bearded.com']
