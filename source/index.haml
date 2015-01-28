@@ -1,0 +1,66 @@
+---
+title: Demo
+---
+%a.back{href: "https://github.com/beardedstudio/middleman-patterns"}
+  &laquo; Back to the Middleman Patterns GitHub Repo
+%p Let's build some patterns!
+%p First, we create some directories in our patterns directory:
+%ul
+  %li atoms
+  %li molecules
+  %li organisms
+  %li templates
+
+%p Next, let's create an atom that we know we'll be using throughout our site. In our atoms directory, let's create <code class="code--inline">text-input.haml</code>. And, inside of it, let's write some Haml markup that we think an input field will need.
+
+:code
+  # lang: haml
+
+  ---
+  input_type: text
+  input_id:
+  input_classes:
+  input_placeholder:
+  input_maxlength:
+  ---
+
+  - attrs = {type: input_type}
+  - attrs[:class] = input_classes if input_classes
+  - attrs[:id] = input_id if input_id
+  - attrs[:placeholder] = input_placeholder if input_placeholder
+  - attrs[:maxlength] = input_maxlength if input_maxlength
+
+  %input{attrs}
+
+%p What we're saying above is that, ultimately, we want to render an <code class="code--inline">input</code> in our markup, but at any time, it could possibly have many optional attributes added to it.
+%p By default, we set our <code class="code--inline">input_type</code> to <code class="code--inline">"text"</code>, because typically, we're going to render text fields for this example. Then, we set up our other possible attributes to accept values when they're passed in our other pages and partials.
+%p Here's how we render that text input atom in one of our pages using Haml:
+
+:code
+  # lang: haml
+
+  %form
+    %label
+      First Name:
+    = atom 'text-input', input_classes: "input--text", input_placeholder: "Cindy Crosby"
+
+%p Which will render a lovely input field like so:
+
+.rendered-example
+  %form
+    %label
+      First Name:
+    %input{type: "text", class: "input--text", placeholder: "Cindy Crosby"}
+
+%p And the markup for that will look like:
+
+:code
+  # lang: html
+
+  <form>
+    <label>First Name:</label>
+    <input type="text" class="input--text" placeholder="Cindy Crosby" />
+  </form>
+
+%p You can include atoms inside of molecules inside of organisms inside of templates, just like you can with <a href="http://patternlab.io/">Pattern Lab</a>.
+
