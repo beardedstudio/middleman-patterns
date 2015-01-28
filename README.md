@@ -79,6 +79,9 @@ And your output will be:
 </div>
 ```
 
+### Demo Site
+We put a little [demo](http://beardedstudio.github.io/middleman-patterns/) up online!
+
 ### Config options
 
 You can customize the patterns directory by passing `patterns_directory: 'other_directory'` when activating the extension.
